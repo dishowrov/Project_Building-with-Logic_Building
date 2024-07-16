@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Manrope", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: blueviolet;
+    }
+
+    p {
+        padding: 1rem;
+    }
+}
+
+@layer components {
+    .page-header {
+        @apply text-center bg-violet-100 text-purple-900 m-3 p-3 rounded-xl font-black text-3xl;
+    }
+
+    .dynamic-info-part {
+        @apply flex items-center justify-evenly;
+    }
+
+    .item-info-box {
+        @apply bg-orange-100 text-orange-700 ring-offset-amber-200 relative;
+    }
+}
+
+@layer utilities {
+    .info-item {
+        background: linear-gradient(347deg, rgba(154, 154, 176, 1) 0%, rgba(238, 223, 223, 1) 55%, rgba(143, 219, 235, 1) 100%);
+        border: 2px solid gainsboro;
+        padding: 1.3rem;
+        font-size: 33px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .item-info-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        /* Ensure it stays behind the content */
+        border-radius: 5px;
+        /* Adjust if you need rounded corners */
+        padding: 2px;
+        /* Adjust border thickness */
+        background: linear-gradient(347deg, rgba(154, 154, 176, 1) 0%, rgba(238, 223, 223, 1) 55%, rgba(143, 219, 235, 1) 100%);
+        -webkit-mask:
+            /* Create a mask to simulate the border effect */
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        /* Ensures the background gradient is visible only in the border area */
+    }
+
+    .item-info-box:hover {
+        transition: all linear 1s;
+        -webkit-transition: all linear 1s;
+        -moz-transition: all linear 1s;
+        -ms-transition: all linear 1s;
+        -o-transition: all linear 1s;
+        margin: 15px;
+    }
+}

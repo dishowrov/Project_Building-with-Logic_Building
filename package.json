@@ -1,0 +1,32 @@
+{
+  "name": "project_building-with-logic_building",
+  "version": "1.0.0",
+  "description": "Build project with logic building",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dishowrov/Project_Building-with-Logic_Building.git"
+  },
+  "keywords": [
+    "TailwindCSS",
+    "JavaScript",
+    "Development"
+  ],
+  "author": "Din Islam Showrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dishowrov/Project_Building-with-Logic_Building/issues"
+  },
+  "homepage": "https://github.com/dishowrov/Project_Building-with-Logic_Building#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.5"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39"
+  }
+}
