@@ -7,7 +7,7 @@
     <title>Project building with logic building</title>
 
     <!-- StyleSheet -->
-     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./output.css">
 </head>
 
 <body>
@@ -15,19 +15,31 @@
     <h1 class="page-header">Student Attendence Sheet</h1>
 
     <div class="dynamic-info-part">
-        <h3 class="info-item">100</h3>
-        <h3 class="info-item">34.5</h3>
-        <h3 class="info-item">9</h3>
+        <h3 class="info-item" id="total-students">100</h3>
+        <h3 class="info-item" id="avg-gpa">34.5</h3>
+        <h3 class="info-item" id="total-passed">9</h3>
     </div>
 
-    <div class="item-info-box">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequuntur, iure eaque mollitia nam velit culpa quam fugiat necessitatibus incidunt corporis itaque in placeat vitae voluptatem! Illo ea, quisquam sunt fugiat repudiandae nam sint?
-        </p>
+    <h2 class="m-4 text-2xl">More details info</h2>
+
+    <div class="m-5 p-3">
+        <ul>
+            <li class="item-info-box mb-5">
+                <p class="text-4xl">Avatar - 2.1</p>
+                <p class="ml-7 pb-3">Test 1</p>
+                <p class="ml-7 pb-3">Test 2</p>
+            </li>
+
+            <li class="item-info-box mb-5">
+                <p class="text-4xl">Avatar - 2.1</p>
+                <p class="ml-7 pb-3">Test 1</p>
+                <p class="ml-7 pb-3">Test 2</p>
+            </li>
+        </ul>
     </div>
 
     <!-- JavaScript files here -->
-     <script type="module" src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
 
 </body>
 
